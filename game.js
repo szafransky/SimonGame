@@ -13,6 +13,14 @@ $(document).keypress(function() {
   }
 });
 
+$(document).on("click",function(){
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 function nextSequence() {
 
   let randomNumber = Math.floor(Math.random() * 4);
