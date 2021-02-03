@@ -12,9 +12,16 @@ body {
 
 .container {
   display: block;
-  width: 50%;
+  /* width: 50%; */
   margin: auto;
 
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 40px;
+    width: 100%;
+  }
 }
 
 .btn {
